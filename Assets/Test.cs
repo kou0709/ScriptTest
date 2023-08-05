@@ -13,7 +13,7 @@ public class Boss
     public void Magic()
     {
         
-        if (mp > 5)
+        if (mp >=5)
         {
             mp -= 5;
 
@@ -53,7 +53,7 @@ public class Test: MonoBehaviour
     {
         int[] array = { 12, 231, 53, 32, 41 };
 
-        for (int i = 0; i < 5; i++)
+        for (int i = 4; i > -1; i--)
         {
             Debug.Log(array[i]);
 
@@ -63,7 +63,7 @@ public class Test: MonoBehaviour
         for (int i = 0; i< 5; i++)
         {
             Debug.Log(array[i]);
-
+           
         }
 
         // Bossクラスの変数を宣言してインスタンスを代入
